@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Data Analytics{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="jumbotron">
+        <h2 class="display-4">Welcome to Your Dashboard</h2>
+        <p class="lead">This is the main content area for the Data Analytics Dashboard.</p>
+        <hr class="my-4">
+        <p>This section will display data visualizations and analytics insights.</p>
+    </div>
+    <h3>Data Preview:</h3>
+    <div class="table-responsive">
+        {{ data_preview | safe }}
+    </div>
+</div>
+{% endblock %}
